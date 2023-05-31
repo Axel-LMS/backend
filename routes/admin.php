@@ -1,0 +1,33 @@
+<?php
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\ClubController;
+use App\Http\Controllers\Admin\FileController;
+use App\Http\Controllers\Admin\TestController;
+use App\Http\Controllers\Admin\CycleController;
+use App\Http\Controllers\Admin\CourseController;
+use App\Http\Controllers\Admin\SliderController;
+use App\Http\Controllers\Admin\StudentController;
+use App\Http\Controllers\Admin\TeacherController;
+use App\Http\Controllers\Admin\TestScoreController;
+use App\Http\Controllers\Admin\AttendanceController;
+use App\Http\Controllers\Admin\EnrollmentController;
+use App\Http\Controllers\Admin\CourseByCycleController;
+use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\CoursePerCycleController;
+use App\Http\Controllers\Admin\TeacherPerCourseController;
+
+Route::apiResource('teachers', TeacherController::class);
+Route::apiResource('coursepercycles', CoursePerCycleController::class);
+Route::apiResource('categories', CategoryController::class);
+Route::apiResource('courses', CourseController::class);
+Route::apiResource('cycles', CycleController::class);
+Route::apiResource('coursebycycles', CourseByCycleController::class);
+Route::apiResource('students', StudentController::class);
+Route::apiResource('enrollments', EnrollmentController::class);
+Route::apiResource('teacherpercourses', TeacherPerCourseController::class);
+Route::apiResource('clubs', ClubController::class);
+Route::apiResource('attendances', AttendanceController::class);
+Route::apiResource('tests', TestController::class);
+Route::apiResource('testscores', TestScoreController::class);
+Route::apiResource('sliders', SliderController::class);
+Route::apiResource('files', FileController::class);
